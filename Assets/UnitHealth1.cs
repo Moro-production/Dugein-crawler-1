@@ -63,21 +63,10 @@ public class UnitHealth1 : MonoBehaviour
         
         }
 
-    public void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.tag == "EnemyBody")
-        {
-            if (DmgUnit > 0)
-            {
-               
-                {
-                   
-
-                }
-            }
-            Debug.Log("contact");
-        }
-    }
+  //  public void OnCollisionEnter(Collision collision)
+   // {
+        
+    //}
 }
 
 

@@ -25,7 +25,7 @@ using UnityEngine;
    
     /// The damage inflicted by the monster's attack.
     
-    public int attackDamage = 10;
+    public int EnemyattackDamage = 10;
 
     
     /// The time interval between each attack.
