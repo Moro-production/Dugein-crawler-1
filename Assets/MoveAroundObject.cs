@@ -15,7 +15,7 @@ public class MoveAroundObject : MonoBehaviour
     private Transform _target;
 
     [SerializeField]
-    private float _distanceFromTarget = 3.0f;
+
 
     private Vector3 _currentRotation;
     private Vector3 _smoothVelocity = Vector3.zero;

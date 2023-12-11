@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class UnitHealth1 : MonoBehaviour
     
@@ -8,11 +9,10 @@ public class UnitHealth1 : MonoBehaviour
     public GameObject player;
     // fields 
     int _currentHealth=100;
-    public int CurrentHealth = 100;
     public int _currentMaxHealth=100;
-
-    int health = 100;
-    int DmgUnit = 10;
+    public TextMeshProUGUI textmesh;
+   
+    
 
     // properties
     public int Health
@@ -24,6 +24,7 @@ public class UnitHealth1 : MonoBehaviour
         set
         {
             _currentHealth = value;
+            textmesh.text = "Health: "+value.ToString();
         }
     }
     public int MaxHealth
@@ -37,36 +38,12 @@ public class UnitHealth1 : MonoBehaviour
             _currentMaxHealth = value;
         }
     }
-    // constructor
-    public UnitHealth1(int Health, int MaxHealth)
-    {
-        _currentHealth = Health;
-        _currentMaxHealth = MaxHealth;
-    }
-    public void DmgUnitFunc(int dmgAmount)
-    {
-        if (_currentHealth > 0)
-        {
-            _currentHealth -= dmgAmount;
-        }
-    }
-    public void HealthUnit(int healAmount)
-    {
-        if (_currentHealth < _currentMaxHealth)
-        {
-            _currentHealth += healAmount;
-        }
-        if (_currentHealth < _currentMaxHealth)
-        {
-            _currentHealth += healAmount;
-        }
-        
-        }
+   
+    
+    
+    
 
-  //  public void OnCollisionEnter(Collision collision)
-   // {
-        
-    //}
+  
 }
 
 

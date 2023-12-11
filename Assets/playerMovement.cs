@@ -13,8 +13,7 @@ public class playerMovement : MonoBehaviour
     [SerializeField]
     private float _playerSpeed = 5f;
 
-    [SerializeField]
-    private float _rotationSpeed = 10f;
+    
 
     [SerializeField]
     private Camera _followCamera;
@@ -23,9 +22,8 @@ public class playerMovement : MonoBehaviour
     private bool _groundedPlayer;
 
     [SerializeField]
-    private float _jumpHeight = 1.0f;
-    [SerializeField]
-    private float _gravityValue = -9.81f;
+    
+    
 
     private void Start()
     {
