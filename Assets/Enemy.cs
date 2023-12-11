@@ -33,7 +33,7 @@ using UnityEngine;
     public float attackInterval = 2f;
 
     private float attackTimer;
-    public float Health = 100;
+    public float EnemyHealth = 100;
 
     private void Update()
     {

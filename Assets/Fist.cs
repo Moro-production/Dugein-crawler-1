@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Fist : MonoBehaviour
@@ -23,11 +24,13 @@ public class Fist : MonoBehaviour
     {
         if (collision.gameObject == player)
         {
-        Debug.Log("Hitting");
+        
             player.GetComponent<UnitHealth1>().Health -= EnemyattackDamage;
         }
+
     }
 
+   
 
 
 }

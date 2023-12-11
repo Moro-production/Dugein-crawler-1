@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using Unity.VisualScripting;
 
 public class UnitHealth1 : MonoBehaviour
     
@@ -25,6 +26,7 @@ public class UnitHealth1 : MonoBehaviour
         {
             _currentHealth = value;
             textmesh.text = "Health: "+value.ToString();
+           
         }
     }
     public int MaxHealth
@@ -40,7 +42,7 @@ public class UnitHealth1 : MonoBehaviour
     }
    
     
-    
+   
     
 
   
