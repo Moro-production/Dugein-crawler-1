@@ -2,13 +2,16 @@ using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using System.Net.Security;
+using Unity.VisualScripting;
 using UnityEngine;
 
 
 
  public class Enemy : MonoBehaviour
 { 
-    public GameObject player;
+    
+    
+    
     /// The target object that the monster should chase and attack.
     public Transform Player;
    
@@ -37,6 +40,7 @@ using UnityEngine;
 
     private void Update()
     {
+        
         // Check if the target is within attack range.
         if (Vector3.Distance(transform.position, Player.position) <= attackRange)
         {
@@ -57,7 +61,8 @@ using UnityEngine;
             transform.position = Vector3.MoveTowards(transform.position, Player.position, movementSpeed * Time.deltaTime);
         }
     }
-
+    
+    
 
     /// Attacks the target by reducing its health.
 
@@ -65,4 +70,5 @@ using UnityEngine;
     {
 
     }
+   
 }

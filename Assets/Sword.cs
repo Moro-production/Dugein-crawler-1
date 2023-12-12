@@ -6,14 +6,15 @@ using static System.Runtime.CompilerServices.RuntimeHelpers;
 
 public class Sword : MonoBehaviour
 {
-    public GameObject Enemy1;
+    
     public Animator anim;
-   
+    
     public int SwordDmg=10;
 
     private void Start()
     {
         anim=GetComponent<Animator>();
+       
     }
 
     private void Update()
@@ -22,12 +23,10 @@ public class Sword : MonoBehaviour
         {
             anim.SetTrigger("Active");
            
+
         }
 
     }
     
-    
+
 }
-
-
-

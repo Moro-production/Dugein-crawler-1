@@ -12070,6 +12070,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: sword
       objectReference: {fileID: 0}
+    - target: {fileID: 1866560071247570, guid: a96277e2e8acb9d4b83adf17a87141bf, type: 3}
+      propertyPath: m_TagString
+      value: Sword
+      objectReference: {fileID: 0}
     - target: {fileID: 4544055715682306, guid: a96277e2e8acb9d4b83adf17a87141bf, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.074999996
@@ -12540,7 +12544,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b3bf23e6d7ebc644ba1a240b2eaee6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 461474222}
   Player: {fileID: 461474230}
   movementSpeed: 2
   attackRange: 2
@@ -14766,6 +14769,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 461474233}
+  SwordDmg: 10
 --- !u!136 &2117307305
 CapsuleCollider:
   m_ObjectHideFlags: 0

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy Fists
   - EnemyBody
+  - Sword
   layers:
   - Default
   - TransparentFX
