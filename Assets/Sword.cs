@@ -1,28 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static System.Runtime.CompilerServices.RuntimeHelpers;
 
 public class Sword : MonoBehaviour
 {
-    public GameObject Enemy;
-    public int SwordDamage=10;
-    void Start()
+    public Animator anim;
+    private void Start()
     {
-        
+        anim=GetComponent<Animator>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
-    }
-
-    public void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject == Enemy)
+        if(Input.GetKeyDown("1"))
         {
-            Debug.Log("Hitting");
-            Enemy.GetComponent<Enemy>().EnemyHealth -= SwordDamage;
+            anim.Play("Attack1");
+            Debug.Log("Pressed");
         }
     }
+
 }
+
+
+

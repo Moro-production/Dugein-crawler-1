@@ -2729,6 +2729,11 @@ CapsuleCollider:
   m_Height: 2.610034
   m_Direction: 1
   m_Center: {x: 0, y: 0.9926306, z: 0}
+--- !u!95 &461474233 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7232730286969761241, guid: 6924745a509f7b746bc74f3d4548b1aa, type: 3}
+  m_PrefabInstance: {fileID: 1056399216}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &468397523 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5388047940000256984, guid: f8885a07e6c63684cb884cc1e2308708, type: 3}
@@ -7598,7 +7603,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 780761152700154019, guid: 6924745a509f7b746bc74f3d4548b1aa, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.614
+      value: 0.757
       objectReference: {fileID: 0}
     - target: {fileID: 780761152700154019, guid: 6924745a509f7b746bc74f3d4548b1aa, type: 3}
       propertyPath: m_LocalPosition.z
@@ -11238,15 +11243,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4544055715682306, guid: a96277e2e8acb9d4b83adf17a87141bf, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.47501826
+      value: 0.476
       objectReference: {fileID: 0}
     - target: {fileID: 4544055715682306, guid: a96277e2e8acb9d4b83adf17a87141bf, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.004802974
+      value: -0.005
       objectReference: {fileID: 0}
     - target: {fileID: 4544055715682306, guid: a96277e2e8acb9d4b83adf17a87141bf, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.29349548
+      value: 0.294
       objectReference: {fileID: 0}
     - target: {fileID: 4544055715682306, guid: a96277e2e8acb9d4b83adf17a87141bf, type: 3}
       propertyPath: m_LocalRotation.w
@@ -11275,6 +11280,22 @@ PrefabInstance:
     - target: {fileID: 4544055715682306, guid: a96277e2e8acb9d4b83adf17a87141bf, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -60
+      objectReference: {fileID: 0}
+    - target: {fileID: 95711299030348656, guid: a96277e2e8acb9d4b83adf17a87141bf, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 017b2a9a18c38964eb3e9415a4cd8572, type: 2}
+    - target: {fileID: 95711299030348656, guid: a96277e2e8acb9d4b83adf17a87141bf, type: 3}
+      propertyPath: m_UpdateMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 95711299030348656, guid: a96277e2e8acb9d4b83adf17a87141bf, type: 3}
+      propertyPath: m_CullingMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 95711299030348656, guid: a96277e2e8acb9d4b83adf17a87141bf, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13765,8 +13786,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 921a8d62abd12e54687644d8640fc641, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Enemy: {fileID: 0}
-  SwordDamage: 10
+  anim: {fileID: 461474233}
 --- !u!136 &2117307305
 CapsuleCollider:
   m_ObjectHideFlags: 0
