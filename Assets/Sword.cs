@@ -13,11 +13,13 @@ public class Sword : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKeyDown("1"))
+        if (Input.GetMouseButtonDown(0))
         {
-            anim.Play("Attack1");
-            Debug.Log("Pressed");
+            anim.SetTrigger("Active");
         }
+      
+           
+       
     }
 
 }
