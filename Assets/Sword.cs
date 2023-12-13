@@ -8,25 +8,22 @@ public class Sword : MonoBehaviour
 {
     
     public Animator anim;
-    
+    //public GameObject Enemy1;
     public int SwordDmg=10;
 
-    private void Start()
+    void Start()
     {
-        anim=GetComponent<Animator>();
-       
+        anim = gameObject.GetComponent<Animator>();
     }
-
-    private void Update()
+    void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
             anim.SetTrigger("Active");
-           
-
         }
-
+        
     }
-    
+   
+
 
 }
