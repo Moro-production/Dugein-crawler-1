@@ -3249,6 +3249,11 @@ CapsuleCollider:
   m_Height: 2.3038473
   m_Direction: 1
   m_Center: {x: 0, y: 1.1457245, z: 0}
+--- !u!95 &461474233 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7232730286969761241, guid: 6924745a509f7b746bc74f3d4548b1aa, type: 3}
+  m_PrefabInstance: {fileID: 1056399216}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &468397523 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5388047940000256984, guid: f8885a07e6c63684cb884cc1e2308708, type: 3}
@@ -8358,7 +8363,7 @@ PrefabInstance:
     - target: {fileID: 7232730286969761241, guid: 6924745a509f7b746bc74f3d4548b1aa, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 9100000, guid: 017b2a9a18c38964eb3e9415a4cd8572, type: 2}
     - target: {fileID: 7232730286969761241, guid: 6924745a509f7b746bc74f3d4548b1aa, type: 3}
       propertyPath: m_UpdateMode
       value: 1
@@ -12137,7 +12142,8 @@ PrefabInstance:
       propertyPath: m_ApplyRootMotion
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 95711299030348656, guid: a96277e2e8acb9d4b83adf17a87141bf, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -14768,7 +14774,7 @@ CapsuleCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 4.202472
   m_Height: 24.076473
@@ -14786,6 +14792,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 921a8d62abd12e54687644d8640fc641, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim1: {fileID: 461474233}
 --- !u!1001 &2119336629
 PrefabInstance:
   m_ObjectHideFlags: 0

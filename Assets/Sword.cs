@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Sword : MonoBehaviour
 {
-    Animator anim1;
+    [SerializeField] Animator anim1;
     // Start is called before the first frame update
     void Start()
     {
-        anim1 = GetComponent<Animator>();
+        anim1.SetTrigger("Attack");
     }
 
     // Update is called once per frame
@@ -17,9 +17,12 @@ public class Sword : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             anim1.SetTrigger("Attack");
-           
+            this.GetComponent<CapsuleCollider>().enabled = true;
         }
 
-      
+        if (Input.GetMouseButtonUp(0))
+        {
+            this.GetComponent<CapsuleCollider>().enabled = false;
+        }
     }
 }
