@@ -1,29 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngineInternal;
-using static System.Runtime.CompilerServices.RuntimeHelpers;
 
 public class Sword : MonoBehaviour
 {
-    
-    public Animator anim;
-    //public GameObject Enemy1;
-    public int SwordDmg=10;
-  
-
-
+    Animator anim1;
+    // Start is called before the first frame update
     void Start()
     {
-       
-       
+        anim1 = GetComponent<Animator>();
     }
+
+    // Update is called once per frame
     void Update()
     {
-       
-
+        if (Input.GetMouseButtonDown(0))
+        {
+            anim1.SetTrigger("Attack");
+        }
     }
-
-
-
 }
