@@ -17,12 +17,17 @@ public class Sword : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             anim1.SetTrigger("Attack");
+        }
+
+        if (anim1.GetCurrentAnimatorStateInfo(0).IsName("Attack1"))
+        {
             this.GetComponent<CapsuleCollider>().enabled = true;
         }
 
-        if (Input.GetMouseButtonUp(0))
+        else
         {
             this.GetComponent<CapsuleCollider>().enabled = false;
         }
+
     }
 }
