@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using Unity.VisualScripting;
+using System.Security.Cryptography;
 
 public class UnitHealth1 : MonoBehaviour
     
@@ -12,21 +13,23 @@ public class UnitHealth1 : MonoBehaviour
     int _currentHealth=100;
     public int _currentMaxHealth=100;
     public TextMeshProUGUI textmesh;
-   
-    
 
-    // properties
-    public int Health
+  
+
+// properties
+public int Health
     {
+        
         get
         {
             return _currentHealth;
+            
         }
         set
         {
             _currentHealth = value;
             textmesh.text = "Health: "+value.ToString();
-           
+            
         }
     }
     public int MaxHealth
@@ -41,11 +44,7 @@ public class UnitHealth1 : MonoBehaviour
         }
     }
    
-    
    
-    
-
-  
 }
 
 

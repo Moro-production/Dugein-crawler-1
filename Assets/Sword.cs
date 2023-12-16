@@ -5,10 +5,13 @@ using UnityEngine;
 public class Sword : MonoBehaviour
 {
     [SerializeField] Animator anim1;
+    public int SwordDmg = 10;
+    public GameObject Sword1;
     // Start is called before the first frame update
     void Start()
     {
         anim1.SetTrigger("Attack");
+        
     }
 
     // Update is called once per frame
@@ -17,16 +20,28 @@ public class Sword : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             anim1.SetTrigger("Attack");
+            
         }
 
         if (anim1.GetCurrentAnimatorStateInfo(0).IsName("Attack1"))
         {
             this.GetComponent<CapsuleCollider>().enabled = true;
+            
         }
 
         else
         {
             this.GetComponent<CapsuleCollider>().enabled = false;
+            
+        }
+
+    }
+    public void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject == Sword1)
+        {
+
+            Sword1.GetComponent<Enemy>().Enemy1Health -= SwordDmg;
         }
 
     }

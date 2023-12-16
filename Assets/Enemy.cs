@@ -28,15 +28,16 @@ using UnityEngine;
    
     /// The damage inflicted by the monster's attack.
     
-    public int EnemyattackDamage = 10;
+    public int Enemy1attackDamage = 10;
+  
 
-    
+
     /// The time interval between each attack.
-    
+
     public float attackInterval = 2f;
 
     private float attackTimer;
-    public float EnemyHealth = 100;
+    public float Enemy1Health = 100;
 
     private void Update()
     {
