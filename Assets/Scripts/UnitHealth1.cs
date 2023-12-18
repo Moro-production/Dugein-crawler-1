@@ -29,6 +29,12 @@ public int Health
         {
             _currentHealth = value;
             textmesh.text = "Health: "+value.ToString();
+            if (_currentHealth <= 0)
+            {
+                Health = 0;
+                // game over code
+                
+            }
             
         }
     }

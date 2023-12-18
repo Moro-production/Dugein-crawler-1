@@ -1,4 +1,5 @@
 using JetBrains.Annotations;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Net.Security;
@@ -8,8 +9,9 @@ using UnityEngine;
 
 
  public class Enemy : MonoBehaviour
-{ 
-    
+{
+    public GameObject Sword1;
+    public int SwordDmg = 10;
     
     
     /// The target object that the monster should chase and attack.
@@ -62,11 +64,20 @@ using UnityEngine;
             transform.position = Vector3.MoveTowards(transform.position, Player.position, movementSpeed * Time.deltaTime);
         }
     }
-    
-    
+
+
 
     /// Attacks the target by reducing its health.
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.name == "Sword1")
+        {
+            if (Sword1.GetComponentInParent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Attack1"))
+                Enemy1Health -= SwordDmg;
+        }
+
+    }
     private void Attack()
     {
 

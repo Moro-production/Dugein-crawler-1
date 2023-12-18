@@ -23,26 +23,7 @@ public class Sword : MonoBehaviour
             
         }
 
-        if (anim1.GetCurrentAnimatorStateInfo(0).IsName("Attack1"))
-        {
-            this.GetComponent<CapsuleCollider>().enabled = true;
-            
-        }
-
-        else
-        {
-            this.GetComponent<CapsuleCollider>().enabled = false;
-            
-        }
 
     }
-    public void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject == Sword1)
-        {
-
-            Sword1.GetComponent<Enemy>().Enemy1Health -= SwordDmg;
-        }
-
-    }
+    
 }

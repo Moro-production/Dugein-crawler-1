@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.35872698, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311926, g: 0.38074008, b: 0.35872707, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -16909,10 +16909,10 @@ CapsuleCollider:
   m_ProvidesContacts: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.114620924
-  m_Height: 0.22924185
+  m_Radius: 0.10029721
+  m_Height: 0.21264069
   m_Direction: 1
-  m_Center: {x: -0.017652744, y: 0.00044059753, z: 0.0811868}
+  m_Center: {x: 0.036970545, y: 0.05281859, z: 0.10326529}
 --- !u!54 &1107236652
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -24205,8 +24205,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b3bf23e6d7ebc644ba1a240b2eaee6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Sword1: {fileID: 2117307303}
+  SwordDmg: 10
   Player: {fileID: 461474230}
-  movementSpeed: 2
+  movementSpeed: 1
   attackRange: 2
   Enemy1attackDamage: 10
   attackInterval: 2
@@ -30098,7 +30100,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
